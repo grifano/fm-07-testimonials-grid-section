@@ -1,36 +1,37 @@
 /*** Fonts ***/
-/* poppins-200 - latin */
+/* barlow-semi-condensed-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 200;
-  src: url('../fonts/poppins-v21-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* poppins-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: 'Barlow Semi Condensed';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/barlow-semi-condensed-v15-latin-regular.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* poppins-600 - latin */
+/* barlow-semi-condensed-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/barlow-semi-condensed-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-semi-condensed-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow Semi Condensed';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/barlow-semi-condensed-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /*** Variables ***/
 :root {
   /*** Colors ***/
-  --bg-body-color: #fafafa;
-  --text-body-color: #4d4f62;
+  --bg-body-color: #ecf2f8;
+  --text-body-color: #48556a;
   /*** Fonts ***/
-  --font-family: 'Poppins', sans-serif;
+  --font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 /*** Reset styles ***/
@@ -91,19 +92,13 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100svh;
-  padding-top: 85px;
-  padding-bottom: 85px;
-}
-@media screen and (max-width: 768px) {
-  main {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .container {
   margin: 0 auto;
   max-width: 375px;
-  padding: 0 32px;
+  padding: 0 24px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -112,126 +107,13 @@ main {
 }
 
 /*** Feature Card Section Styles ***/
-.section-features {
-  flex-grow: 1;
-}
-.features-section-title-wrap {
-  margin-bottom: 76px;
-}
-.section-features-title {
-  font-weight: 600;
-  font-size: 24px;
-  letter-spacing: 0.01em;
-  text-align: center;
-  margin-bottom: 16px;
-}
-.text-weight-light {
-  font-weight: 300;
-}
-.section-features-subtitle {
-  font-size: 15px;
-  line-height: 1.8;
-  letter-spacing: 0.01em;
-  text-align: center;
-  opacity: 0.5;
-}
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-.features-list-item:nth-child(3) {
-  order: 4;
-}
-.features-card {
-  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
-  background: #fff;
-  padding: 28px;
-  border-radius: 8px;
-  &.is-green {
-    border-top: 3px solid #44d3d2;
-  }
-  &.is-red {
-    border-top: 3px solid #ea5454;
-  }
-  &.is-blue {
-    border-top: 3px solid #549ef2;
-  }
-  &.is-yellow {
-    border-top: 3px solid #fcae4a;
-  }
-}
-.features-card-title {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 1px;
-}
-.features-card-text {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 1.8;
-  letter-spacing: 0.01em;
-  opacity: 0.5;
-  margin-bottom: 33px;
-}
-.features-card-icon {
-  width: 57px;
-  height: 57px;
-  margin-left: auto;
-}
+
 @media screen and (min-width: 768px) {
-  .features-section-title-wrap {
-    max-width: 540px;
-    margin: 0 auto;
-    margin-bottom: 64px;
-  }
-  .section-features-title {
-    font-size: 36px;
-  }
-  .features-card {
-    padding: 32px;
-  }
-  .features-card-title {
-    margin-bottom: 6px;
-  }
-  .features-card-text {
-    margin-bottom: 40px;
-  }
-  .features-card-icon {
-    width: 64px;
-    height: 64px;
-  }
-  .features-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 30px;
-  }
-  .features-list-item:nth-child(1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    align-content: center;
-  }
-  .features-list-item:nth-child(2) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-  .features-list-item:nth-child(3) {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-    align-content: center;
-  }
-  .features-list-item:nth-child(4) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
 }
 
 /*** Attribution footer ***/
 .attribution {
-  color: var(--dark-navy);
-  background-color: var(--dark-grey);
+  color: var(--text-body-color);
   padding: 16px;
   text-align: center;
 }

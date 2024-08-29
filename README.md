@@ -13,7 +13,7 @@ from tech to the best cycling routes.
 
 Happy exploring!
 
-# Project: Four card feature section
+# Project: Testimonials grid section
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges that help to improve
 coding skills by building realistic projects.
@@ -22,8 +22,8 @@ coding skills by building realistic projects.
 
 ### Requirements
 
-Build out this social links profile and get it looking as close to the design as
-possible.
+Build out this testimonials grid section and get it looking as close to the
+design as possible.
 
 Your users should be able to:
 
@@ -38,8 +38,9 @@ Your users should be able to:
 ### Links
 
 - Solution URL:
-  [FrontendMentor Challenge Hub](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK)
-- Live Site URL: [GitHub Pages](https://grifano.github.io/fm-06-four-card/)
+  [FrontendMentor Challenge Hub](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub)
+- Live Site URL:
+  [GitHub Pages](https://grifano.github.io/fm-07-testimonials-grid-section/)
 
 ## Author
 
