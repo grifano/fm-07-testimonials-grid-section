@@ -138,6 +138,9 @@ main {
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
   background-color: #fff;
   &.is-purple {
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-position: top 0 right 24px;
+    background-repeat: no-repeat;
     color: #cfcfcf;
     background-color: #733fc8;
   }
@@ -200,6 +203,9 @@ main {
     grid-template-rows: repeat(2, 1fr);
     column-gap: 30px;
     row-gap: 24px;
+  }
+  .testimonial-card.is-purple {
+    background-position: top 0 right 80px;
   }
   .testimonials-grid-item {
     &:nth-child(1) {
