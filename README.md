@@ -38,7 +38,7 @@ Your users should be able to:
 ### Links
 
 - Solution URL:
-  [FrontendMentor Challenge Hub]([https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub](https://www.frontendmentor.io/solutions/testimonials-cards-section-using-grid-css-SyPPLrgRGv))
+  [FrontendMentor Solution Hub](https://www.frontendmentor.io/solutions/testimonials-cards-section-using-grid-css-SyPPLrgRGv)
 - Live Site URL:
   [GitHub Pages](https://grifano.github.io/fm-07-testimonials-grid-section/)
 
